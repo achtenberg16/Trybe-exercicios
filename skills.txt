@@ -1,4 +1,5 @@
-Unix
-Bash
-Git
-bash
+Comunicação 
+Aprendizado
+Elegancia
+Aprendizado
+facilitação
