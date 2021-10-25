@@ -1,7 +1,0 @@
-Unix
-Bash
-Git
-HTML
-css
-Reach
-Angular
