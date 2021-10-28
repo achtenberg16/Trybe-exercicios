@@ -1,0 +1,7 @@
+font-family: muda o tamanho da fonte 
+font-size: muda o tamanho da fonte
+font-weight: bold deixa o texto em negrito
+font-style: altera o estilo da fonte, ex italic
+line-height: altera o tamanho de expaçamento entre as linhas
+text-align: alinha o texto
+text-decoration: decora o texto, ex underline sublinha, none reseta todas decorações
