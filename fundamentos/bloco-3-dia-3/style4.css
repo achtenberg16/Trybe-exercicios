@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  font-size: 20px;
+}
+li em{font-weight: bold;}
+ol li.impar {
+  background-color: yellow;
+  text-transform: uppercase;
+}
+ol li.par {
+  color: green;
+}
+h1,
+h2 {
+  color: red;
+}
+h1 em {
+  font-size: 40px;
+  border: solid 1px;
+}
+
+.colorblue{color: blue;}
+
+.java{background-color: pink;}
+
+.stack:hover{background-color: orange;}
+.w3s:hover{background-color: green;}
+.mdn:hover{background-color: black;}
+.devdocs:hover{background-color: yellow;}
+.trybe:hover{background-color: green;}
