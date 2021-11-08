@@ -1,3 +1,2 @@
-let pizzas = ["calabresa", "mussarela"];
-pizzs.push("chocolate");
-console.log(pizzs)
+let pizzas = ["calabresa", "mussarela", "presunto", "peito de peru"];
+for (let index = 0; index < pizzas.length/* condição para continuar o laço de repetição */; index++/* encremento, ou seja apos executar o console log vai ser somado +1 ao index */) { console.log(pizzas[index]) }
