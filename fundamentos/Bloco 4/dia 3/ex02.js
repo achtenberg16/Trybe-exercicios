@@ -1,5 +1,7 @@
-let n = 7;
+let n = 5;
 let resultado = "";
 
-for(index = 0; index< n; index+=1){resultado = resultado + "*";
-console.log(resultado)}
+for(i = 0; i < n; i++){
+    resultado = resultado + "*";
+    console.log(resultado)
+}
