@@ -139,6 +139,13 @@
         criaTitulo("titulo 1")
         criaTitulo("titulo 2");
         criaTitulo("titulo 3")
+
+        document.querySelector("h1").classList.add("title")
+
+        let h3 = document.querySelectorAll("h3")
+        for (let index in h3) {
+            h3[index].classList.add("description")
+        }
     </script>
 </body>
 
