@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //       Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+        let h1Adicional = document.createElement("h1");
+        h1Adicional.innerText = "Exercício 5.2";
+        document.body.appendChild(h1Adicional);
+        // Adicione a tag main com a classe main-content como filho da tag body ;
+        let tagMain = document.createElement("main");
+        tagMain.className = "main-content";
+        document.body.appendChild(tagMain);
+        // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+        function adicionaSection() {
+            let tag = document.querySelector(".main-content")
+            let criaSecao = document.createElement("section");
+            criaSecao.classList.add("center-content")
+            tag.append(criaSecao)
+        }
+        adicionaSection();
+        // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+        function criaP(texto) {
+            let posicao = document.querySelector("section")
+            let cria = document.createElement("p")
+            cria.innerText = texto;
+            posicao.appendChild(cria)
+        }
+        criaP("este texto sera usado")
+        // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+        function batatinha() {
+            let pai = document.getElementsByTagName("main")[0];
+            let cria = document.createElement("section");
+            cria.className = "left-content";
+            pai.appendChild(cria)
+        }
+        batatinha()
+        // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+        function batatinhaTwo() {
+            let pai = document.getElementsByTagName("main")[0];
+            let cria = document.createElement("section");
+            cria.className = "right-content";
+            pai.appendChild(cria)
+        }
+        batatinhaTwo()
+        // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+        function adicionaImagem() {
+            let pai = document.getElementsByClassName("left-content")[0];
+            console.log(pai)
+            let cria = document.createElement("img");
+            cria.className = "small-image";
+            cria.src = "https://picsum.photos/200"
+            pai.appendChild(cria)
+        }
+        adicionaImagem()
+        // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+
+        let pai = document.getElementsByClassName("right-content")[0];
+        let cria = document.createElement("ul");
+        pai.appendChild(cria)
+        function criaLi(elemento) {
+            let pai = document.querySelector("ul");
+            let cria = document.createElement("li")
+            cria.innerText = elemento;
+            pai.appendChild(cria)
+        }
+        criaLi("primeiro")
+        criaLi("segundo")
+        criaLi("terceiro")
+        criaLi("quarto")
+        criaLi("quinto")
+        criaLi("sexto")
+        criaLi("sétimo")
+        criaLi("oitavo")
+        criaLi("nono")
+        criaLi("decimo")
+        // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+        function criaTitulo(a) {
+            let pai = document.querySelector("main");
+            let cria = document.createElement("h3");
+            cria.innerText = a;
+            pai.appendChild(cria)
+        }
+        criaTitulo("titulo 1")
+        criaTitulo("titulo 2");
+        criaTitulo("titulo 3")
+    </script>
+</body>
+
+</html>
