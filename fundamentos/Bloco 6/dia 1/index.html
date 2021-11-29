@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Nome<input type="text" required placeholder="Nome completo:" maxlength="40" autofocus></label>
+            <label>email<input type="text" maxlength="50" required placeholder="seunome@gmail.com"></label>
+            <label>CPF<input type="text" maxlength="11" required placeholder="CPF"></label>
+            <Label>Endereço<input type="text" maxlength="200" required placeholder="Endereço:"></Label>
+            <label>Cidade<input type="text" maxlength="28" required placeholder="Cidade">
+                <label for="estado">Estado
+                    <select name="estado" id="state">
+                        </selec>
+                </label>
+                <input type="radio" id="house" name="home" value="casa"><label for="house">casa</label>
+                <input type="radio" id="apartamento" name="home" value="apartamento"><label
+                    for="apartamento">apartamento</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados do seu ultimo emprego</legend>
+            <label>Resumo do Seu cúrriculo
+            <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" placeholder="Resumo do cúrriculo"
+                required></textarea>
+            <label>Cargo<input type="text" maxlength="40" required placeholder="Cargo:"></label>
+            <textarea name="descricao" id="descricao" maxlength="500" cols="30" required rows="10"
+                placeholder="Descrição do Cargo"></textarea>
+            <label>data de inicio<input type="text" required name="data-inicio" id="data-inicio" placeholder=30/11/2020></label>
+        </fieldset>
+        <label >Enviar<input type="submit" id=''></label>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
