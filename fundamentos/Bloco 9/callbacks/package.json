@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por Alessandro achtenberg enquanto estudava na Trybe!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achtenberg16/Trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achtenberg16/Trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/achtenberg16/Trybe-exercicios#readme",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
