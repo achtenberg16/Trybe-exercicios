@@ -1,4 +1,5 @@
 import React from "react";
+import './content.css'
 const conteudos = [
     {
       conteudo: 'High Order Functions',
