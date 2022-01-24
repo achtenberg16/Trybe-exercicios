@@ -1,0 +1,10 @@
+.container-pokemons{
+  display: flex;
+  max-width: 815px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
