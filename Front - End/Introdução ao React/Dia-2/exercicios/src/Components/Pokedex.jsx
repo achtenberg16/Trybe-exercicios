@@ -6,9 +6,9 @@ class Pokedex extends Component {
   render() {
     const { pokemons } = this.props;
     return (
-      <section className='container-pokemons'> 
+      <section className='container-pokemons'>
         {pokemons.map((pokemon, index) => (
-          <Pokemon key={index} pokemon={pokemon}></Pokemon>
+          <Pokemon key={index} unitPokemon={pokemon}></Pokemon>
         ))}
       </section>
     );

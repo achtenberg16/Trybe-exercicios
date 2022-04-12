@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class Pokemon extends Component {
   render() {
-    const { name, type, averageWeight, image } = this.props.pokemon;
+    const { name, type, averageWeight, image } = this.props.unitPokemon;
     return (
       <div className='pokemon-card'>
         <p className='name'>{name}</p>
@@ -18,10 +18,7 @@ class Pokemon extends Component {
   }
 }
 Pokemon.prototypes = {
-  name: PropTypes.string,
-  type: PropTypes.string,
-  averageWeight: PropTypes.object,
-  image: PropTypes.string,
+  npse: PropTypes.string.isRequired,
 };
 
 export default Pokemon;
