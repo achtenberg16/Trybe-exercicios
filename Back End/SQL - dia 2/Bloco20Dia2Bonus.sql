@@ -53,4 +53,7 @@ SELECT Price, Piece FROM `PiecesProviders`.`Provides` WHERE Provider = 'RBT';
 SELECT * FROM `PiecesProviders`.`Provides` ORDER BY Price DESC LIMIT 5;
 
 -- Escreva uma query para exibir o nome das empresas e preço das peças com os quatro maiores preços, começando a lista a partir do 3º item.
-SELECT name, price from `PiecesProviders`.Provides ORDER BY price DESC limit 4 OFFSET 2;
+SELECT Provider, Price from `PiecesProviders`.Provides ORDER BY price DESC limit 4 OFFSET 2;
+
+-- Escreva uma query para exibir todas as informações das peças que são providas pela empresa HAL . Ordene o resultado pelos preços das peças de forma decrescente.
+SELECT * FROM  `PiecesProviders`.`Providers` WHERE Provider = 'HAL' ORDER BY Price DESC;
