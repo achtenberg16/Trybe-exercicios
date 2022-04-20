@@ -118,3 +118,7 @@ SELECT * FROM `Scientists`.`Projects` ORDER BY hours LIMIT 1;
 
 -- Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade de horas.
 SELECT * FROM `Scientists`.`Projects` ORDER BY hours LIMIT 5;
+
+-- Escreva uma query que exiba a string "Existem Number cientistas na tabela Scientists.", em que Number se refira a quantidade de cientistas.
+
+SELECT CONCAT('Existem ', COUNT(SSN), ' cientistas na tabela Scientists.') FROM `Scientists`.`Scientists`
