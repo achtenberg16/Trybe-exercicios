@@ -43,3 +43,8 @@ INSERT INTO Provides(Piece, Provider, Price)
     (3, 'TNBC', 45),
     (4, 'HAL', 5),
     (4, 'RBT', 7);
+
+
+-- Escreva uma query para exibir a peça e o preço de tudo que é provido pela empresa RBT .
+
+SELECT Price, Piece FROM `PiecesProviders`.`Provides` WHERE Provider = 'RBT';
