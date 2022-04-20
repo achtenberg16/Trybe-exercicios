@@ -100,3 +100,17 @@ INSERT INTO Scientists(SSN,Name)
 
     -- Escreva uma query que exiba a string "O projeto Name precisou de Hours horas para ser concluído." para cada projeto.
     SELECT CONCAT('O projeto ', Name, ' precisou de ', Hours, ' horas para ser concluído.') FROM `Scientists`.Projects;
+
+    -- Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
+    SELECT * FROM Scientists.Projects ORDER BY hours DESC LIMIT 3;
+
+    -- Escreva uma query para exibir o código de todos os projetos da tabela AssignedTo sem que haja repetições.
+
+    SELECT DISTINCT(Project) FROM `Scientists`.AssignedTo;
+    
+
+    -- Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
+    SELECT * FROM `Scientists`.`Projects` ORDER BY hours DESC LIMIT 1;
+    
+    
+
