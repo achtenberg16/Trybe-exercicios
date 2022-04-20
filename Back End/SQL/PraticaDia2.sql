@@ -110,7 +110,11 @@ INSERT INTO Scientists(SSN,Name)
     
 
     -- Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
-    SELECT * FROM `Scientists`.`Projects` ORDER BY hours DESC LIMIT 1;
+ 
+    SELECT * FROM `Scientists`.`Projects` ORDER BY hours DESC LIMIT 1;   
     
-    
+-- Escreva uma query para exibir o nome do segundo projeto com menor quantidade de horas.
+SELECT * FROM `Scientists`.`Projects` ORDER BY hours LIMIT 1;
 
+-- Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade de horas.
+SELECT * FROM `Scientists`.`Projects` ORDER BY hours LIMIT 5;
